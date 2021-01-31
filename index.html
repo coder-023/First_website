@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhai's Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            /* Reseting Html */
+            margin: 0px;
+            padding: 0px;
+            background: url('img/new1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Ubuntu Mono', monospace;
+
+        }
+
+        .left {
+
+            color: antiquewhite;
+            display: inline-block;
+            position: absolute;
+            left: 27px;
+            top: 12px;
+        }
+
+        .mid {
+
+            color: antiquewhite;
+            display: block;
+            width: 60%;
+            margin: 43px auto;
+
+        }
+
+        .right {
+
+            color: antiquewhite;
+            display: inline-block;
+            position: absolute;
+            right: 11px;
+            top: 45px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: azure;
+            text-decoration: none;
+            padding: 34px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(202, 148, 131);
+            text-decoration: underline;
+
+        }
+
+        .src {
+            height: 120px;
+            width: 146px;
+            border-radius: 25%;
+            position: relative;
+            left: 9px;
+        }
+
+        .intro {
+            /* image-rendering: crisp-edges; */
+            position: relative;
+            right: -6px;
+            text-align: center;
+            font-size: 22px;
+            line-height: 41px;
+        }
+
+        
+
+        button {
+            font-family: 'Ubuntu Mono', monospace;
+            padding: 4px 11px;
+            margin: 10px 8px;
+            border-radius: 10%;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: rgb(15, 116, 204);
+        }
+
+        .container {
+
+            color: yellow;
+            position: relative;
+            top: 99px;
+            padding: 39px 64px;
+            margin: 42px 30px;
+            width: 40%;
+            border-radius: 37px;
+        }
+
+        .form-group input {
+            font-family: 'Ubuntu Mono', monospace;
+            margin: 12px 12px;
+            border-radius: 12px;
+            padding: 6px 13px;
+        }
+
+        #submit_btn {
+            position: relative;
+            bottom: 1px;
+            left: 49px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Create a header and in it create 3 divs Right div will be for logo,middle div will be for navigation -->
+    <header class="header">
+        <div class="left">
+            <img src="img/372.jpg" alt="muku" class="src">
+            <div class="intro">
+                Mukul's Gym
+            </div>
+            <!-- left box for logo  -->
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <!-- mid box for navigation -->
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button><button class="btn">Email Us</button>
+            <!-- right box for search -->
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join best Gym of Pune now!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn1" id="submit_btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
